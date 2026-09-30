@@ -4,10 +4,6 @@ Path-level, explainable repurposing hypotheses from a real 47k-node, 2.25M-edge 
 ([Hetionet v1.0](https://github.com/hetio/hetionet), Himmelstein et al., eLife 2017) - with an honest evaluation
 of what the graph can and cannot tell you.
 
-**Not a discovery claim.** This is a methods and explainability project: it reimplements degree-weighted path
-counting (the Project Rephetio approach), adds a permutation-null specificity score and gene-level counterfactuals,
-and shows every candidate as the actual paths behind it. Full write-up: [`docs/writeup.md`](docs/writeup.md).
-
 ## Results at a glance
 
 Pan-disease benchmark: rank every compound for each of 58 diseases with at least 3 known "treats" edges
@@ -27,9 +23,6 @@ Pan-disease benchmark: rank every compound for each of 58 diseases with at least
   (e.g. rank 1 -> 162), others do not. See the evidence cards and `fig_ablation.png`.
 * Binding edges carry **no direction of effect**: agonists and antagonists, toxicants and drugs look alike.
 
-Figures: `outputs/figures/` (benchmark, damping sweep, hub audit, ablation, evidence cards, path graphs).
-Interactive path explorer: `docs/interactive/index.html` (static page; click a candidate and a node to see its paths).
-Literature triage of the shortlisted candidates (trial history, direction of effect): [`docs/literature_triage.md`](docs/literature_triage.md).
 
 ## Method in one paragraph
 
@@ -63,9 +56,9 @@ python3 src/run_all.py            # ~10 min on a laptop; --n-perm 20 for a quick
 
 Hetionet's content is CC0, but it integrates many sources with their own licenses (some non-commercial); see the
 Hetionet repository. The dataset is not redistributed here - the scripts read the Zenodo bundle you download.
-`data/triage.csv` is a hand-made classification of compounds (endogenous, cytotoxic, direction, trial history); notes marked in `docs/literature_triage.md` were checked against searched sources, the rest come from general pharmacology.
 
-## Limitations (short)
+
+## Limitations
 
 Hetionet is a 2017 snapshot built from 2015-16 sources; binding has no direction of effect; negatives in the
 benchmark are unlabeled; Alzheimer's has 4 labeled "treats" drugs and Parkinson's none (28 "palliates"), so
