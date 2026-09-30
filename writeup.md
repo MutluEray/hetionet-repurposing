@@ -112,7 +112,7 @@ robust rank is therefore not the same as a specific one. Recurring driver genes 
 clusters (for Alzheimer's, nicotinic receptor genes; for Parkinson's, monoamine-system genes).
 
 **Literature triage.** The shortlisted candidates were checked against published trials and reviews
-(`docs/literature_triage.md`). Several of the best-supported graph hypotheses had already been tested clinically:
+(`literature_triage.md`). Several of the best-supported graph hypotheses had already been tested clinically:
 lithium (mixed), minocycline (negative in mild Alzheimer's; inconclusive futility result in early Parkinson's), nicotine
 (positive pilot in mild cognitive impairment, larger trial registered) and varenicline (negative). Two top hits
 appear to act in the wrong direction: bacitracin is an experimental inhibitor of an amyloid-degrading enzyme, and
